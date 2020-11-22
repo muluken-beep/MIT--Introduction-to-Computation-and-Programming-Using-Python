@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+First, implement the function is_word_guessed that takes in two parameters a
+string, secret_word , and a list of letters (strings), letters_guessed. This function
+returns a boolean True
+if secret_word has been guessed (i.e., all the letters of
+secret_word are in letters_guessed ), and False otherwise. This function will be
+useful in helping you decide when the hangman game has been successfully
+completed, and becomes an endtest
+for any iterative loop that checks letters against
+the secret word.
+
+For this function, you may assume that all the letters in secret_word and
+letters_guessed are lowercase.
+
+# Example Usage:
+>>> secret_word = 'apple'
+>>> letters_guessed = ['e', 'i', 'k', 'p', 'r', 's']
+>>> print(is_word_guessed(secret_word, letters_guessed) )
+False
+"""
+
+def is_word_guessed(secret_word, letters_guessed):
+    for char in secret_word:
+        if char in letters_guessed:
+                return True
+                print ('true')
+        else:
+                return False
+                print ('false')
+
+print(isWordGuessed(secretWord, lettersGuessed))
