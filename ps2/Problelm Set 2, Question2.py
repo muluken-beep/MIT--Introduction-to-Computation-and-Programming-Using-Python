@@ -37,14 +37,21 @@ def getGuessedWord(secretWord, lettersGuessed):
     
     for char in secretWord:
         if char in lettersGuessed:
-            #if the character is present att
-            Guessed_letters_list.append(char)
+            #if the character guesed is present in the secret word, add it to the list
+            Guessed_letters_list.append(char + ' ')
+            #otherwise add an underscore for every character that is missing
         else:
-            Guessed_letters_list.append('_')
-            
-    return ''.join(Guessed_letters_list)
+            Guessed_letters_list.append('_ ')
+
+  # Concatenate all the items into a string.  
+  
+    Guessed_letters_list = ''.join(Guessed_letters_list)
+    return Guessed_letters_list
             
 print(getGuessedWord(secretWord, lettersGuessed))
+
+
+
 
 
 

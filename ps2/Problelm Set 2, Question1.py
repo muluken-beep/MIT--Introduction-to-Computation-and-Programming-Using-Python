@@ -51,7 +51,7 @@ def is_word_guessed(secret_word, letters_guessed):
       False otherwise
     '''    
 #create a list from the secret word 
-    secretWord_list = list(secretWord)
+    secretWord_list = list(secret_word)
 
 # # Iterate through each letter from lettersguessed
     for letter in letters_guessed:
